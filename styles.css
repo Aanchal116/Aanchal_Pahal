@@ -85,20 +85,21 @@ body {
   padding: 5% 0;
 }
 
+.experience-title {
+  display: block;
+}
+
+
 @media screen and (max-width: 1100px){
 
   .experience-img {
-    width: 40%;
+    width: 60%;
   }
 
   .experience-title {
     padding-bottom: 5% !important;
   }
 
-}
-
-.experience-title {
-  display: block;
 }
 
 
@@ -157,7 +158,6 @@ body {
   .skills-img {
     height: 80%;
     width: 80%;
-    margin: auto;
   }
 
   .left-skills{
