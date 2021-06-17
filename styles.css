@@ -88,7 +88,7 @@ body {
 @media screen and (max-width: 1100px){
 
   .experience-img {
-    width: 60%;
+    width: 40%;
   }
 
   .experience-title {
@@ -156,6 +156,8 @@ body {
 
   .skills-img {
     height: 80%;
+    width: 80%;
+    margin: auto;
   }
 
   .left-skills{
@@ -219,6 +221,10 @@ body {
   .right-contact{
     text-align: center;
     display: inline;
+  }
+
+  .contact-video {
+    width: 80%;
   }
 
 }
