@@ -76,15 +76,15 @@
     </nav>
 
     <!-- Header -->
-    <div id="header" class="header">
+    <div id="header" class="header container-fluid">
       <div class="row">
-        <div class="col sm-12">
+        <div class="col-md-12 col-lg-6">
           <div class="left-header">
             <img class="header-img" src="images/IntroPic.png" alt="Pic" />
           </div>
         </div>
 
-        <div class="col sm-12">
+        <div class="col">
           <div class="right-header intro">
             <h1 class="header-title">
               <strong> Hey! I'm Aanchal Pahal.</strong>
@@ -97,9 +97,9 @@
 
     <!-- About-Me -->
 
-    <div id="about-me" class="container about-me" style="width: 60%">
+    <div id="about-me" class="container-fluid about-me">
       <div class="row">
-        <div class="col">
+        <div class="about-col col-md-12 col-lg-6">
           <div class="left-about">
             <h2 class="about-title">
               <strong><u>About-Me </u> </strong>
@@ -117,7 +117,7 @@
           </div>
         </div>
 
-        <div class="col">
+        <div class="about-col col-md-12 col-lg-6">
           <div class="right-about">
             <img
               class="about-img img-fluid"
@@ -181,7 +181,7 @@
             <h4 class="experience-content">Mobile App Development Intern</h4>
             <a href="https://www.thesparksfoundationsingapore.org/">
               <img
-                class="experience-img"
+                class="experience-img img-sparks"
                 src="images/The_Sparks_Foundation.jpg"
                 alt=""
               />
@@ -228,15 +228,16 @@
 
     <!-- Skills -->
 
-    <div id="skills" class="skills">
+    <div id="skills" class=" container-fluid skills">
       <h2 class="skills-title"><u> My Skills </u></h2>
 
       <div class="row skills-row">
-        <div class="col left-skills">
-          <img src="images/Skills.svg" alt="" />
+
+        <div class="col-md-12 col-lg-6 left-skills">
+          <img class="skills-img" src="images/Skills.svg" alt="" />
         </div>
 
-        <div class="col right-skills">
+        <div class="col-md-12 col-lg-6 right-skills">
           <div class="skill-item">
             <i class="fas fa-file-code fa-3x skill-fas"></i>
             <span class="skill-content">Web Development</span>
@@ -262,29 +263,32 @@
 
     <!-- Contact-Me -->
     <div id="contact-me">
-      <div class="contact-me">
+      <div class="contact-me container-fluid">
         <h2 class="contact-title">
           <strong> <u> Wanna Connect? Looking forward, see ya! </u></strong>
         </h2>
 
         <div class="row">
-          <div class="col left-contact">
+          <div class="col-md-12 col-lg-6 left-contact">
             <video class="contact-video" autoplay muted>
               <source src="videos/Connect.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
           </div>
 
-          <div class="col">
+          <div class="col-md-12 col-lg-6">
             <div class="right-contact">
-              <i class="fas fa-envelope fa-2x connect-icon"></i>
+              <div>
+                <i class="fas fa-envelope fa-2x connect-icon"></i>
               <span class="connect-content"
                 ><a class="contact-links" href="mailto:aanchal1620@gmail.com">
                   Mail me!!</a
                 ></span
               >
-              <br />
-              <i class="fab fa-linkedin fa-2x connect-icon"></i>
+              </div>
+              
+              <div>
+                <i class="fab fa-linkedin fa-2x connect-icon"></i>
               <span class="connect-content"
                 ><a
                   class="contact-links"
@@ -292,17 +296,26 @@
                   >LinkedIn
                 </a>
               </span>
-              <br />
-              <i class="fab fa-github fa-2x connect-icon"></i>
+              </div>
+
+              <div>
+                <i class="fab fa-github fa-2x connect-icon"></i>
               <span class="connect-content"
                 ><a class="contact-links" href="https://github.com/Aanchal116"
                   >GitHub
                 </a>
               </span>
+              </div>
+              
             </div>
           </div>
         </div>
       </div>
     </div>
+
+    <div class="copyright">
+      © 2021 Aanchal Pahal 
+    </div>
+
   </body>
 </html>
