@@ -1,0 +1,165 @@
+body {
+  overflow-x: hidden;
+}
+
+/* Header */
+
+.header {
+  background-color: #008f94;
+  background-image: url("https://www.transparenttextures.com/patterns/diagmonds.png");
+  color: white;
+  text-align: center;
+}
+
+.header-img {
+  width: 80%;
+}
+
+.intro {
+  padding-top: 30%;
+  font-family: "Sacramento", cursive;
+}
+
+.header-title {
+  font-size: 4rem;
+}
+
+.header-content {
+  font-size: 2rem;
+}
+
+/* About-Me */
+
+.about-me .col {
+  padding-top: 10%;
+}
+
+.about-me .left-about {
+  line-height: 2;
+}
+
+.about-title {
+  font-family: "Montserrat", sans-serif;
+  color: #03506f;
+  font-size: 3rem;
+  padding-bottom: 2%;
+}
+
+.about-sub-heading {
+  color: #e41f7b;
+}
+
+/* Experience */
+
+.experience {
+  text-align: center;
+  background-color: #7ff0ff;
+  background-image: url("https://www.transparenttextures.com/patterns/stardust.png");
+}
+
+.experience-heading {
+  padding-top: 5%;
+  font-family: "Tangerine", cursive;
+  font-size: 5rem;
+  color: #bf1363;
+}
+
+.experience-elements {
+  padding: 5%;
+}
+
+.experience-img {
+  padding: 5% 0;
+}
+
+.experience-title {
+  display: block;
+}
+
+
+
+/* Skills */
+
+.skills-title {
+  text-align: center;
+  padding-top: 5%;
+  font-family: "Montserrat", sans-serif;
+  color: #184d47;
+}
+
+.skills-row {
+  padding: 3% 3% 5% 3%;
+}
+
+.left-skills {
+  text-align: center;
+}
+
+.right-skills {
+  text-align: left;
+  padding-top: 3%;
+  background-color: #d8f8b7;
+  background-image: url("https://www.transparenttextures.com/patterns/inspiration-geometry.png");
+  border-radius: 8%;
+  border-style: solid;
+  border-color: thistle;
+}
+
+.skill-item {
+  padding: 3%;
+  margin-left: 8%;
+}
+
+.skill-fas {
+  padding-right: 3%;
+  color: #03506f;
+  width: 80px;
+  text-align: center;
+}
+
+.skill-content {
+  font-size: 2.5rem;
+  font-family: "Peddana", serif;
+}
+
+/* Contact-Me */
+
+.contact-me {
+  width: 80%;
+  margin: auto;
+  background-color: #9ddfd3;
+  background-image: url("https://www.transparenttextures.com/patterns/carbon-fibre-v2.png");
+  border-radius: 10%;
+}
+
+.contact-title {
+  font-family: "Sacramento", cursive;
+  text-align: center;
+  padding-top: 5%;
+  font-size: 3rem;
+  color: purple;
+}
+
+.left-contact {
+  text-align: right;
+  padding: 2% 0;
+}
+
+.right-contact {
+  text-align: left;
+  padding: 15% 0 10% 15%;
+}
+
+.connect-icon {
+  color: #03506f;
+  width: 80px;
+  text-align: center;
+}
+
+.connect-content {
+  font-size: 25px;
+}
+
+.contact-links {
+  color: purple;
+}
