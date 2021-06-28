@@ -3,6 +3,12 @@ body {
 }
 
 
+
+/* Navbar */
+
+
+
+
 /* Header */
 
 .header {
@@ -59,13 +65,8 @@ body {
   overflow: hidden;
 }
 
-.slide-right h2 {
-  animation: 1s slide-right 1s forwards;
-  transform:translateX(-100%);
-}
-
-.slide-right h4, .slide-right p {
-  animation: 2s slide-right 2s forwards;
+.slide-right h2, .slide-right h4, .slide-right p {
+  animation: 1s slide-right 0s forwards;
   transform:translateX(-100%);
 }
 
