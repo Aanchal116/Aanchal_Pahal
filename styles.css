@@ -2,79 +2,126 @@ body {
   overflow-x: hidden;
 }
 
+
 /* Header */
 
 .header {
-  background-color: #008f94;
-  background-image: url("https://www.transparenttextures.com/patterns/diagmonds.png");
+  background :linear-gradient(0deg,  rgba(10, 10, 10, 0.616), rgba(15, 15, 15, 0.555)) , url(images/Main-bg.jpg);
+  background-size: cover;
+  background-position: 10%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
   color: white;
   text-align: center;
-}
-
-.header-img {
-  width: 80%;
+  height: 100vh;
+  width: 100%;
 }
 
 .intro {
-  padding-top: 30vh;
   font-family: "Sacramento", cursive;
 }
 
 .header-title {
+  padding-top: 40vh;
   font-size: 4rem;
 }
 
+.header-span {
+  color: rgb(231, 231, 17);
+  font-size: 6rem;
+}
+
 .header-content {
-  font-size: 2rem;
+  font-size: 4rem;
 }
 
 @media screen and (max-width: 1100px){
-  .header-img {
-    width: 60%;
+  .header{
+    height: 90vh;
+    background-size: cover;
   }
-  .intro{
-      padding:10% 0 5% 0;
+  .header-title {
+    padding-top: 30% ;
+    font-size: 3rem;
+  }
+  .header-content {
+    font-size: 2rem;
+    padding-bottom: 10%;
   }
 }
+
+
 
 /* About-Me */
 
+.slide-right {
+  width: 100%;
+  overflow: hidden;
+}
+
+.slide-right h2 {
+  animation: 1s slide-right 1s forwards;
+  transform:translateX(-100%);
+}
+
+.slide-right h4, .slide-right p {
+  animation: 2s slide-right 2s forwards;
+  transform:translateX(-100%);
+}
+
+@keyframes slide-right {
+  to {
+    transform:translateX(0);
+  }
+}
+
 .about-me {
-  width: 60% !important;  
-}
-
-.about-col {
-  padding-top: 10%;
-}
-
-.about-me .left-about {
+  background: linear-gradient(180deg, rgb(7, 7, 7), rgba(17, 17, 17, 0.753)) ;
+  color: white;
+  text-align: center;
+  padding: 10% 0;
   line-height: 2;
 }
 
+.about-div{
+  width: 60% !important;
+  margin: auto;
+  text-align: left;
+  border-style: dotted;
+  padding: 5%;
+}
+
+
 .about-title {
   font-family: "Montserrat", sans-serif;
-  color: #03506f;
+  color: yellow;
   font-size: 3rem;
   padding-bottom: 2%;
 }
 
-.about-sub-heading {
-  color: #e41f7b;
+@media screen and (max-width: 1100px) {
+  .about-div {
+    width: 80% !important;
+  }
 }
+
+
 
 /* Experience */
 
 .experience {
   text-align: center;
-  background-color: #7ff0ff;
-  background-image: url("https://www.transparenttextures.com/patterns/stardust.png");
+  background-image: url(images/Exp-bg.jpg);
+  background-size: 100% 100%;
+  background-attachment: fixed;
 }
 
 .experience-heading {
-  padding-top: 5%;
+  padding: 5% 3% 0 3%;
   font-family: "Tangerine", cursive;
   font-size: 5rem;
-  color: #bf1363;
+  color: yellow;
+  background-color:grey;
 }
 
 .experience-elements {
@@ -104,12 +151,18 @@ body {
 
 /* Skills */
 
+.skills {
+  background: linear-gradient(180deg, rgba(46, 43, 43, 0.753), rgb(14, 12, 12));
+  border-bottom: white;
+  border-bottom-style: solid;
+}
+
 .skills-title {
   text-align: center;
   padding-top: 5%;
   font-family: "Montserrat", sans-serif;
   font-size: 3rem;
-  color: #184d47;
+  color: yellow;
 }
 
 .skills-row {
@@ -123,7 +176,7 @@ body {
 .right-skills {
   text-align: left;
   padding-top: 3%;
-  background-color: #d8f8b7;
+  background-color: grey;
   background-image: url("https://www.transparenttextures.com/patterns/inspiration-geometry.png");
   border-radius: 8%;
   border-style: solid;
@@ -137,7 +190,7 @@ body {
 
 .skill-fas {
   padding-right: 3%;
-  color: #03506f;
+  color: aquamarine;
   width: 80px;
   text-align: center;
 }
@@ -145,6 +198,7 @@ body {
 .skill-content {
   font-size: 2.5rem;
   font-family: "Peddana", serif;
+  color: white;
 }
 
 @media screen and (max-width: 1100px) {
@@ -168,14 +222,14 @@ body {
 
 }
 
+
+
 /* Contact-Me */
 
 .contact-me {
-  width: 80%;
-  margin: auto;
-  background-color: #9ddfd3;
-  background-image: url("https://www.transparenttextures.com/patterns/carbon-fibre-v2.png");
-  border-radius: 10%;
+  background :linear-gradient(0deg,  rgba(14, 13, 13, 0.904), rgba(14, 13, 13, 0.781)) , url(images/Contact-bg.jpg);
+  background-position: 10%;
+  padding-bottom: 5%;
 }
 
 .contact-title {
@@ -183,57 +237,45 @@ body {
   text-align: center;
   padding-top: 5%;
   font-size: 3rem;
-  color: purple;
+  color: yellow;
 }
 
-.left-contact {
-  text-align: right;
-  padding: 2% 0;
+form {
+  width: 60%;
+  margin: auto;
+  color: white;
 }
 
-.right-contact {
-  text-align: left;
-  padding: 15% 0 10% 15%;
-}
-
-.connect-icon {
-  color: #03506f;
-  width: 80px;
+.submit-btn {
   text-align: center;
 }
 
-.connect-content {
-  font-size: 25px;
+.contact-icons {
+  text-align: center;
+  padding-top: 3%;
 }
 
-.contact-links {
-  color: purple;
+.social-icon {
+  display: inline-block;
+  padding: 0 3%;
+}
+
+.contact-fab {
+  color: white;
 }
 
 @media screen and (max-width: 1100px) {
-
-  .contact-me{
-    margin-top: 8%;
+  .contact-title{
+    padding-top: 20%;
   }
-
-  .left-contact{
-    text-align: center;
-  }
-
-  .right-contact{
-    text-align: center;
-    display: inline;
-  }
-
-  .contact-video {
-    width: inherit;
-  }
-
 }
+
+
 
 /* Copyright */
 
 .copyright {
   text-align: center;
-  padding-top: 2%;
+  padding: 2% 0;
+  background-color: yellow;
 }
