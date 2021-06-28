@@ -20,6 +20,14 @@ body {
   font-family: "Sacramento", cursive;
 }
 
+.header-title {
+  font-size: 4rem;
+}
+
+.header-content {
+  font-size: 2rem;
+}
+
 @media screen and (max-width: 1100px){
   .header-img {
     width: 60%;
@@ -27,14 +35,6 @@ body {
   .intro{
       padding:10% 0 5% 0;
   }
-}
-
-.header-title {
-  font-size: 4rem;
-}
-
-.header-content {
-  font-size: 2rem;
 }
 
 /* About-Me */
@@ -83,6 +83,9 @@ body {
 
 .experience-img {
   padding: 5% 0;
+}
+.experience-title {
+  display: block;
 }
 
 .experience-title {
@@ -164,6 +167,10 @@ body {
     height: fit-content;
   }
 
+  .skill-item{
+    margin-left: 0;
+  }
+
 }
 
 /* Contact-Me */
@@ -224,7 +231,7 @@ body {
   }
 
   .contact-video {
-    width: 80%;
+    width: inherit;
   }
 
 }
