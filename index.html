@@ -9,6 +9,9 @@
     <!-- CSS -->
     <link rel="stylesheet" href="styles.css" />
 
+    <!-- JavaScript -->
+    <script src="app.js"></script>
+
     <!-- Bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
@@ -34,12 +37,16 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Peddana&family=Sacramento&family=Tangerine:wght@700&display=swap"
       rel="stylesheet"
     />
+
+
   </head>
 
+
   <body>
+
     <!-- Navbar -->
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav id="navbar" class="header-navbar navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
       <div class="container">
         <a class="navbar-brand" href="#">Aanchal Pahal</a>
         <button
@@ -70,69 +77,58 @@
             <li class="nav-item">
               <a class="nav-link" href="#contact-me">Contact Me</a>
             </li>
+            <li>
+              <a href="resume/Aanchal Pahal - Resume.pdf">
+                <button class="btn btn-outline-warning">Resume</button>
+              </a>
+            </li>
           </ul>
         </div>
       </div>
     </nav>
 
+
+
     <!-- Header -->
     <div id="header" class="header container-fluid">
-      <div class="row">
-        <div class="col-md-12 col-lg-6">
-          <div class="left-header">
-            <img class="header-img" src="images/IntroPic.png" alt="Pic" />
-          </div>
-        </div>
 
-        <div class="col">
-          <div class="right-header intro">
-            <h1 class="header-title">
-              <strong> Hey! I'm Aanchal Pahal.</strong>
-            </h1>
-            <p class="header-content">A Computer Science Technophile</p>
-          </div>
-        </div>
+      <div class="intro">
+        <h1 class="header-title">
+          <strong> Hey! I'm <span class="header-span"> Aanchal Pahal. </span></strong>
+        </h1>
+        <p class="header-content">A Computer Science Technophile</p>
       </div>
     </div>
+
+
 
     <!-- About-Me -->
 
     <div id="about-me" class="container-fluid about-me">
-      <div class="row">
-        <div class="about-col col-md-12 col-lg-6">
-          <div class="left-about">
-            <h2 class="about-title">
-              <strong><u>About-Me </u> </strong>
-            </h2>
-            <h4 class="about-sub-heading">
-              <strong>Hii, I'm Aanchal Pahal. </strong>
-            </h4>
-            <p class="aboutcontent">
-              I'm a Computer Science B.Tech undergraduate at Guru Gobind Singh
-              Indraprastha University. I'm always up to learn about innovations
-              and technology. I'm majorly inclined towards web and development
-              as of now and am on my way to discover further unfolded paths of
-              the technological world.
-            </p>
-          </div>
-        </div>
 
-        <div class="about-col col-md-12 col-lg-6">
-          <div class="right-about">
-            <img
-              class="about-img img-fluid"
-              src="images/Logo.png"
-              alt="Girl-Pic"
-            />
-          </div>
-        </div>
+      <div id="about-div" class="about-div">
+          <h2 class="about-title">
+            <strong><u>About-Me </u> </strong>
+          </h2>
+          <h4 class="about-sub-heading">
+            <strong>Hii, I'm Aanchal Pahal. </strong>
+          </h4>
+          <p id="about-content" class="about-content">
+            I'm a Computer Science B.Tech undergraduate at Guru Gobind Singh
+            Indraprastha University. I'm always up to learn about innovations
+            and technology. I'm majorly inclined towards web and android development and am on my way to discover further unfolded paths of
+            the technological world.
+          </p>
+        
       </div>
     </div>
+
+
 
     <!-- Experience -->
 
     <div id="experiences" class="experience">
-      <h2 class="experience-heading"><u> My Experiences </u></h2>
+      <span class="experience-heading"><u> My Experiences </u></span>
 
       <div
         id="carouselDark"
@@ -226,6 +222,8 @@
       </div>
     </div>
 
+
+
     <!-- Skills -->
 
     <div id="skills" class=" container-fluid skills">
@@ -261,61 +259,57 @@
       </div>
     </div>
 
+
+
     <!-- Contact-Me -->
-    <div id="contact-me">
-      <div class="contact-me container-fluid">
-        <h2 class="contact-title">
-          <strong> <u> Wanna Connect? Looking forward, see ya! </u></strong>
-        </h2>
 
-        <div class="row">
-          <div class="col-md-12 col-lg-6 left-contact">
-            <video class="contact-video" autoplay muted>
-              <source src="videos/Connect.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          </div>
+      <div id="contact-me" class="contact-me container-fluid">
 
-          <div class="col-md-12 col-lg-6">
-            <div class="right-contact">
-              <div>
-                <i class="fas fa-envelope fa-2x connect-icon"></i>
-              <span class="connect-content"
-                ><a class="contact-links" href="mailto:aanchal1620@gmail.com">
-                  Mail me!!</a
-                ></span
-              >
-              </div>
-              
-              <div>
-                <i class="fab fa-linkedin fa-2x connect-icon"></i>
-              <span class="connect-content"
-                ><a
-                  class="contact-links"
-                  href="https://www.linkedin.com/in/aanchal-pahal/"
-                  >LinkedIn
-                </a>
-              </span>
-              </div>
-
-              <div>
-                <i class="fab fa-github fa-2x connect-icon"></i>
-              <span class="connect-content"
-                ><a class="contact-links" href="https://github.com/Aanchal116"
-                  >GitHub
-                </a>
-              </span>
-              </div>
-              
+        <div class="contact-content">
+          <h2 class="contact-title">
+            <strong> <u> Wanna Connect? Looking forward, see ya! </u></strong>
+          </h2>
+  
+          <form action="mailto:aanchal1620@gmail.com">
+            <div class="mb-3">
+              <label for="formControlInput" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="formControlInput" placeholder="name@example.com">
             </div>
+
+            <div class="mb-3">
+              <label for="formControlTextarea" class="form-label">Message</label>
+              <textarea class="form-control" id="formControlTextarea" rows="3" placeholder="Your Message"></textarea>
+            </div>
+
+            <div class="submit-btn">
+              <button type="submit" class="btn btn-light btn-lg">Submit</button>
+            </div>
+
+          </form>
+
+          <div class="contact-icons">
+            
+            <div class="social-icon">
+              <a href="https:///www.linkedin.com/in/aanchal-pahal/"> <i class="fab fa-linkedin fa-2x contact-fab"></i> </a>
+            </div>
+
+            <div class="social-icon">
+              <a href="https://github.com/Aanchal116"> <i class="fab fa-github fa-2x contact-fab"></i> </a>
+            </div>
+            
           </div>
+
+
         </div>
+
       </div>
-    </div>
 
-    <div class="copyright">
-      © 2021 Aanchal Pahal 
-    </div>
+      <!-- Copyright -->
 
+      <div class="copyright">
+        Made with ❤ by Aanchal Pahal 
+       </div>
+
+  
   </body>
 </html>
