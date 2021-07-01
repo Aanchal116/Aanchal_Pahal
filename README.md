@@ -26,7 +26,7 @@ The website is my personal portfolio webpage. If you want to hire me or connect 
 6. Change the current working directory to the location where you want the cloned directory.
 7. Type git clone, and then paste the URL you copied earlier. It will look like this, with your GitHub username instead of YOUR-USERNAME
 ```
-   $ git clone https://github.com/YOUR-USERNAME/COVID-Info
+   $ git clone https://github.com/YOUR-USERNAME/Aanchal116.github.io
 ```
 8. Press Enter. Your local clone will be created.
 
