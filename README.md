@@ -1,5 +1,6 @@
 # [Aanchal116.github.io](https://aanchal116.github.io/)
-The website is my personal portfolio webpage. If you want to hire me or connect with me, have a look at it :)
+The website is my personal portfolio webpage. If you want to hire me or connect with me, do have a look at it :)
+
 
 *** 
 
@@ -29,8 +30,10 @@ The website is my personal portfolio webpage. If you want to hire me or connect 
 ```
 8. Press Enter. Your local clone will be created.
 
-## Collaboration
 ***
+
+## Collaboration
+
 Here's a little instruction while you take efforts to collaborate in the project
 > Neat work is the best work, yup you got my point.
 > Adding comments to any code make it a lot more efficient.
